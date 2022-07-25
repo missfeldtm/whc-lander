@@ -14,7 +14,6 @@ $font--lato: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  margin: 0 auto;
   max-width: 1440px;
   font-size: 4.266666vw;
 
@@ -28,6 +27,7 @@ $font--lato: "Montserrat", sans-serif;
 body {
   font-family: $font--lato;
   background-color: #f2f2f2;
+  margin: 0 auto;
 }
 
 h1,
