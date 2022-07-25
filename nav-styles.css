@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+nav {
+  position: relative;
+  height: 21.56em;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    height: 53.75em;
+  }
+}
+
+nav.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0 0.8em;
+  background-color: rgba(1, 92, 0, 0.7);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  height: 2.8em;
+}
+
+@media (min-width: 768px) {
+  nav.navbar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 5.75em;
+    padding: 0;
+  }
+}
+
+nav.navbar .nav-branding {
+  margin: 0 auto;
+  position: relative;
+  top: 1.3em;
+}
+
+@media (min-width: 768px) {
+  nav.navbar .nav-branding {
+    top: -3.5em;
+  }
+}
+
+nav.navbar .nav-branding img {
+  width: 5em;
+}
+
+@media (min-width: 768px) {
+  nav.navbar .nav-branding img {
+    width: 15.65em;
+  }
+}
+
+nav.navbar .nav-drawer {
+  left: -100%;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(0, 28, 0, 0.8);
+  width: 90%;
+  text-align: center;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  nav.navbar .nav-drawer {
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+nav.navbar .nav-drawer__header {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  padding: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav.navbar .nav-drawer__header svg {
+  width: 1em;
+  margin: 0 1em 0 0;
+}
+
+nav.navbar .nav-drawer__menu {
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  nav.navbar .nav-drawer__menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+nav.navbar .nav-drawer__link {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  nav.navbar .nav-drawer__link {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+nav.navbar .nav-drawer__item {
+  padding: 0.65em 0;
+  width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  text-align: left;
+  position: relative;
+  opacity: 1;
+}
+
+nav.navbar .nav-drawer__item:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  nav.navbar .nav-drawer__item {
+    border: none;
+    letter-spacing: 0.1em;
+    padding: 0 1em;
+    width: auto;
+    height: auto;
+  }
+  nav.navbar .nav-drawer__item:nth-child(3) {
+    margin: 0 0 0 auto;
+  }
+  nav.navbar .nav-drawer__item a {
+    display: block;
+    font-size: calc(18em / 16);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-up {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav.navbar .nav-drawer.active {
+  -webkit-animation: slide-in 500ms;
+          animation: slide-in 500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  nav.navbar .nav-drawer.active {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
+nav.navbar .nav-drawer.active .nav-drawer__item,
+nav.navbar .nav-drawer.active svg {
+  -webkit-animation: slide-up 500ms;
+          animation: slide-up 500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@media (min-width: 768px) {
+  nav.navbar .nav-drawer.active .nav-drawer__item,
+  nav.navbar .nav-drawer.active svg {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
+nav button {
+  width: 2em;
+  border: none;
+  background: none;
+}
+
+nav .close-nav {
+  width: 2em;
+}
+
+nav .close-nav svg {
+  width: 2em;
+}
+
+nav .icon__fallback-text {
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+nav.navbar-alt {
+  height: calc(60em / 16);
+}
+
+@media (min-width: 768px) {
+  nav.navbar-alt {
+    height: calc(112em / 16);
+  }
+}
+
+nav.navbar-alt .nav-branding {
+  top: 0;
+}
+
+nav.navbar-alt .nav-branding li {
+  font-size: inherit;
+}
+
+nav.navbar-alt .nav-branding img {
+  width: calc(45em / 16);
+}
+
+@media (min-width: 768px) {
+  nav.navbar-alt .nav-branding img {
+    width: calc(94.17em / 16);
+  }
+}
+/*# sourceMappingURL=nav-styles.css.map */

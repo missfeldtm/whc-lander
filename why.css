@@ -1,0 +1,222 @@
+.whc-why {
+  margin: 2em auto;
+  background-color: #001c00;
+  padding: 2em 0 2.5em;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .whc-why {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.whc-why h3 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .whc-why h3 {
+    font-size: calc(65em / 16);
+    margin: 0 auto 0.5em;
+  }
+}
+
+.whc-why h4 {
+  font-size: 1.8em;
+  text-align: center;
+  width: 100%;
+  margin: 0.25em auto;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+@media (min-width: 768px) {
+  .whc-why h4 {
+    font-size: calc(37em / 16);
+  }
+}
+
+.whc-why p {
+  font-size: 0.75em;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.1em 0.25em;
+  margin: 0.75em auto 0.5em 1em;
+  border-radius: 2px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .whc-why p {
+    font-size: calc(18em / 16);
+    margin: 1em 0 0;
+  }
+}
+
+.whc-why li {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+  font-size: 0.7em;
+  letter-spacing: 0.08em;
+  margin: 0.75em auto 0.875em;
+  width: 100%;
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .whc-why li {
+    font-size: calc(18em / 16);
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
+
+.whc-why li:before {
+  content: "";
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  border-bottom: 0.75em solid #fff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .whc-why .why__header {
+    width: 100%;
+  }
+}
+
+.whc-why .whc-why__card {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5em auto;
+}
+
+.whc-why .whc-why__card:nth-child(2) {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .whc-why .whc-why__card {
+    width: 27%;
+  }
+  .whc-why .whc-why__card:nth-child(2) {
+    width: 45%;
+  }
+  .whc-why .whc-why__card:nth-child(3) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .whc-why .whc-why__card:nth-child(3) ul {
+    margin: 0;
+  }
+  .whc-why .whc-why__card:nth-child(3) .flex-column {
+    width: 100%;
+  }
+}
+
+.whc-why .whc-why__card--divide {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.whc-why .whc-why__card--divide li {
+  width: 45%;
+  margin: 0.35em 0;
+}
+
+@media (min-width: 768px) {
+  .whc-why .whc-why__card--divide li {
+    width: 100%;
+  }
+}
+
+.whc-why .flex-column {
+  width: 45%;
+}
+
+.whc-why .why-why__cta {
+  margin: 2em auto 0;
+  padding: 0.35em 0;
+  width: 45%;
+  background-color: #fff;
+  border-radius: 0.25em;
+}
+
+.whc-why .why-why__cta a {
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.whc-why .why-why__cta p {
+  font-size: calc(20em / 16);
+  text-align: center;
+  margin: 0 auto;
+  color: #001c00;
+}
+
+@media (min-width: 768px) {
+  .whc-why .why-why__cta {
+    width: 20%;
+    font-size: calc(30em / 16);
+    margin: 1em 0 0;
+    padding: 0;
+  }
+}
+
+.whc-why .font--bebas {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+}
+
+.whc-quote img {
+  width: 100%;
+}
+/*# sourceMappingURL=why.css.map */
