@@ -4,8 +4,8 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-
+          box-sizing: border-box;
+  margin: 0 auto;
   max-width: 1440px;
   font-size: 4.266666vw;
 }
@@ -25,7 +25,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f2f2f2;
-  margin: 0 auto;
 }
 
 h1,
@@ -71,10 +70,10 @@ header .container {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-line-pack: justify;
-  align-content: space-between;
+      align-content: space-between;
 }
 
 header .hero {
@@ -87,19 +86,19 @@ header .hero {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: distribute;
-  align-content: space-around;
+      align-content: space-around;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 768px) {
@@ -110,8 +109,8 @@ header .hero {
     width: 36.5em;
     height: 19.625em;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

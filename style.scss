@@ -162,7 +162,7 @@ header {
 }
 
 .mobile--only {
-  display: inherit;
+  display: block;
 
   @media (min-width: 768px) {
     display: none !important;
